@@ -12,13 +12,16 @@ CONFIGURAR INTERFAZ
 - wr
 - show running-config, 
 
-CONFIGURAR ROUTER
 
+CONFIGURAR ROUTAS
+ 
 - configure terminal
 - ip route <red destino > <máscara de red> <siguiente salto>
 - exit
 - wr
 - show running-config, 
+- show ip route static
+
 
 CONFIGURAR PC
 
@@ -27,12 +30,6 @@ CONFIGURAR PC
 - no shutdown
 - exit
 - wr
-
-CONFIGURAR ROUTAS
-
-- configure terminal
-- ip route <ip de red> <máscara de red> <gateway>
-- show ip route static
 
 
 *********** Enrutamiento dinámico ****************
