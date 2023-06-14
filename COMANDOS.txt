@@ -10,13 +10,13 @@ CONFIGURAR INTERFAZ
 - no shutdown
 - exit
 - wr
-- show running-config, 
+- show running-config 
 
 
 CONFIGURAR ROUTAS
  
 - configure terminal
-- ip route <red destino > <máscara de red> <siguiente salto>
+- ip route <red destino termina en 0.0> <máscara de red> <siguiente salto>
 - exit
 - wr
 - show running-config, 
@@ -26,7 +26,7 @@ CONFIGURAR ROUTAS
 CONFIGURAR PC
 
 - configure terminal
-- ip address <ip de red> <máscara de red> <gateway>
+- ip <ip de red> <máscara de red> <gateway>
 - no shutdown
 - exit
 - wr
