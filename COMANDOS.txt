@@ -1,0 +1,54 @@
+COMANDOS
+
+*********** Rutas estaticas ****************
+
+CONFIGURAR INTERFAZ
+
+- configure terminal
+- interface [FastEthernet] 0/0
+- ip address <ip de red> <máscara de red>
+- no shutdown
+- exit
+- wr
+- show running-config, 
+
+CONFIGURAR ROUTER
+
+- configure terminal
+- ip route <red destino > <máscara de red> <siguiente salto>
+- exit
+- wr
+- show running-config, 
+
+CONFIGURAR PC
+
+- configure terminal
+- ip address <ip de red> <máscara de red> <gateway>
+- no shutdown
+- exit
+- wr
+
+CONFIGURAR ROUTAS
+
+- configure terminal
+- ip route <ip de red> <máscara de red> <gateway>
+- show ip route static
+
+
+*********** Enrutamiento dinámico ****************
+
+- configure terminal
+- router rip
+- version 2
+- no auto-summary
+- network [ip de red]
+- passive-interface [segmento de red]
+
+
+*********** OSPF ****************
+
+- configure terminal
+- router ospf X
+- router-id X.X.X.X
+- network [ip de red][máscara wildcard] area #
+
